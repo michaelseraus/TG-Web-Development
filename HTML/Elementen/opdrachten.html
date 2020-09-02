@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Bij het inladen van een bestand is het noodzakelijk om de locatie van het
+bestand aan te geven. Dit kan op 2 manieren:
+
+● Absolute path
+● Relative path
+
+Wat houden deze 2 paths in?
+
+Absolute path = absolute path is the complete URL to a file. >> src="https://www.w3schools.com/images/picture.jpg" 
+Relative path = points to a file that is relative to the current page src="/images/picture.jpg"
+
+
+2. Zoek uit welke formaat afbeeldingen er nog meer kan zijn.
+
+ PNG   Portable Network graphics
+ SVG   Scalable vector graphics
+ GIF   Graphic Interchange Format
+ JPEG  Joint Photographic Experts Group
+
+
+ 3. Zoek uit welke browsers er zijn en maak een lijst van je antwoord.
+
+ 1. Mozilla Firefox
+ 2. Google Chrome
+ 3. Opera
+ 4. Microsoft edge
+ 5. Apple Safari
+ 6. Vivaldi
+ 7. Brave
+ 8. Tor
+
+
+ 4. Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven
+en onderaan je website door zowel gebruik te maken van de absolute path en
+relative path.
+-->
+    <img
+      src="https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png"
+      alt=""
+    />
+    <h1>Mijn eerste website</h1>
+    <h2>Mijn eerste subkop</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iure
+      unde veniam non itaque. Minus adipisci, culpa, quidem necessitatibus
+      fugiat nobis, cupiditate ducimus laudantium modi aut accusantium molestias
+      vitae iste.
+    </p>
+    <h2>Mijn tweede subkop</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis et
+      ut laborum reprehenderit quae quidem earum sapiente. Est quasi ratione,
+      reiciendis eum consequuntur similique iste, officiis commodi odio,
+      adipisci accusantium.
+    </p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis et
+      ut laborum reprehenderit quae quidem earum sapiente. Est quasi ratione,
+      reiciendis eum consequuntur similique iste, officiis commodi odio,
+      adipisci accusantium.
+    </p>
+    <hr />
+    <h3>Footer</h3>
+    <p>
+      Deze website is gebouwd vanaf de
+      <a href="https://techgrounds.nl/" target="_blank">Techgrounds Academy</a>
+    </p>
+    <img src="/HTML/Elementen/images/TG_Logo.png" alt="" />
+
+    <!-- 5. Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te
+gebruiken? 
+
+Gives an text to the image incase the image cant be loaded or user is using a screenreader.
+
+
+6. In de sound folder staat een explosion.mp3 bestand.
+Laadt dit bestand in als een audio op het scherm.
+Extra: Maak het leuker door de audio op repeat te zetten.
+Tip: gebruik controls attribute om audio af te spelen.
+-->
+
+    <audio controls loop>
+      <source src="/HTML/Elementen/audio/explosie.mp3" />
+    </audio>
+
+    <!-- 7. Speel een audio bestand af met <source> tag. Leg uit wat hier het voordeel
+van is. 
+
+Je kan meerdere soorten audio formaten uploaden en de browser speelt de eerste af die hij kan supporten.
+
+
+8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
+als een video op het scherm.
+-->
+    <video controls>
+      <source
+        src="/HTML/Elementen/videos/VID-20140324-WA0000.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <!-- LIJSTEN
+    
+    9. Maak gebruik van de verschillende soorten lijsten om het volgende resultaat
+op je webpagina weer te geven.
+     -->
+
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+
+    <ol>
+      <li>Item 1</li>
+      <li>item 2</li>
+      <ol>
+        <li>sub item 1</li>
+        <li>sub item 2</li>
+      </ol>
+      <li>item 3</li>
+    </ol>
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <ul>
+      <li>Item 1</li>
+      <li>item 2</li>
+      <ul>
+        <li>sub item 1</li>
+        <li>sub item 2</li>
+      </ul>
+      <li>item 3</li>
+    </ul>
+
+    <ul>
+      <li>Item 1</li>
+      <li>item 2</li>
+      <ol>
+        <li>sub item 1</li>
+        <li>sub item 2</li>
+      </ol>
+      <li>item 3</li>
+    </ul>
+
+    <!--10. Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de
+volgende onderdelen:
+○ Tigers
+○ Lions
+○ Monkeys
+○ Hippopotaumus  
+
+11. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en
+zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd
+wordt naar het bijbehorende onderdeel.-->
+
+    <nav>
+      <ul>
+        <li><a href="#tigers">Tigers</a></li>
+        <li><a href="#lions">Lions</a></li>
+        <li><a href="#monkeys">Monkeys</a></li>
+        <li><a href="#hippo">Hippopotaumus</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="tigers">Tigers</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum
+      cum repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.
+    </p>
+    <h2 id="lions">Lions</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum
+      cum repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.
+    </p>
+    <h2 id="monkeys">Monkeys</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum
+      cum repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.
+    </p>
+    <h2 id="hippo">Hippopotaumus</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum
+      cum repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Cumque dolorum cum repellendus, quidem deleniti
+      laboriosam necessitatibus pariatur ipsam maxime. Hic nihil voluptatibus
+      quo quidem cumque repellat nulla, voluptatum accusamus accusantium.Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolorum cum
+      repellendus, quidem deleniti laboriosam necessitatibus pariatur ipsam
+      maxime. Hic nihil voluptatibus quo quidem cumque repellat nulla,
+      voluptatum accusamus accusantium.
+    </p>
+  </body>
+</html>

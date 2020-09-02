@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+vullen. -->
+    <form action="">
+      <label for="Voornaam">Voornaam:</label>
+      <input type="text" id="Voornaam" name="Voornaam" /><br /><br />
+      <label for="Achternaam">Achternaam:</label>
+      <input type="text" id="Achternaam" name="Achternaam" /><br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br /><br />
+    </form>
+
+    <!-- 2. Naast input text fields zijn er ook nog andere input fields. Zoals:
+
+● radiobutton √
+● checkbox    √
+● password    √
+● reset
+● submit     √
+● date       √
+● search     √
+● time       √
+● hidden     √
+● email      √
+
+Maak voor elk input field een voorbeeld.  
+
+3. Maak een input email field met een submit knop.
+tip: wat gebeurt er wanneer je op de submit knop clickt met een random text?
+
+dan krijg je een melding dat het geen email adres is. 
+-->
+
+    <form action="">
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male"> Male </label><br /><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="male"> Female </label><br /><br />
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br /><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br /><br />
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" />
+      <input type="submit" value="Submit" /><br /><br />
+      <label for="Sgoogle">Google Search</label>
+      <input type="search" id="Sgoogle" name="Sgoogle" /><br /><br />
+      <label for="Atime">Arrival Time</label>
+      <input type="time" id="Atime" name="Atime" />
+      <input type="hidden" /><br /><br />
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" />
+      <input type="submit" value="submit" />
+      <input type="reset" />
+    </form>
+
+    <!-- 4. Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:
+    Bouw dit voorbeeld na. -->
+  </body>
+</html>
