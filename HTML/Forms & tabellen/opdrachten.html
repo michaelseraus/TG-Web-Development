@@ -63,5 +63,477 @@ dan krijg je een melding dat het geen email adres is.
 
     <!-- 4. Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:
     Bouw dit voorbeeld na. -->
+
+    <h2>Formulier Grouperen</h2>
+    <form action="">
+      <fieldset>
+        <legend>Persoons Gegevens</legend>
+        <br />
+        <label for="Anaam">Achternaam:</label>
+        <input
+          type="text"
+          id="Anaam"
+          name="Anaam"
+          placeholder="Achternaam"
+        /><br /><br />
+        <label for="Vnaam">Voornaam:&nbsp;&nbsp;&nbsp;</label>
+        <input
+          type="text"
+          id="Vnaam"
+          name="Vnaam"
+          placeholder="Voornaam"
+        /><br /><br />
+        <label for="Gdatum">Geboortedatum</label>
+        <input type="date" id="Gdatum" name="Gdatum" /><br /><br />
+        <label for="Gender">M:</label>
+        <input type="radio" id="Gender" name="gender" />
+        <label for="Gender">V:</label>
+        <input type="radio" id="Gender" name="gender" /><br /><br />
+        <label for="Postcode">Postcode:</label>
+        <input
+          type="text"
+          id="Postcode"
+          name="Postcode"
+          placeholder="Postcode"
+        /><br /><br />
+        <label for="Adres">Adres:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="Adres" name="adres" placeholder="Adres" />
+      </fieldset>
+      <input type="submit" value="submit" />
+      <input type="reset" />
+    </form>
+
+    <!-- 5. Naast input element heb je ook een select element. Hiermee kan je een
+dropdown list maken. Maak een drop down list. -->
+
+    <h2>Dropdowns</h2>
+
+    <form action="">
+      <label for="Planguage">Preferred coding Language</label>
+      <select name="Planguage" id="Planguage">
+        <option value="Python">Python</option>
+        <option value="Javascript">Javascript</option>
+        <option value="C+">C+</option>
+        <option value="PHP">PHP</option>
+      </select>
+    </form>
+    <br /><br />
+
+    <!-- 6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+waar je in kan gebruiken en leg dat uit? 
+
+Dropdown list >>> what type of car do you have? 
+Radio Buttons >>>  Are you male or female?
+checkboxes >>>>>> Which one of these options speak to you?
+
+
+7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+willen we graag het volgende weten:
+● Naam van dat persoon
+● Off hij/zij lidmaatschap heeft
+● E-mail van dat persoon
+● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+● Datum en tijdstip om te reserveren
+● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings
+voorwaardes
+● Een submit knop
+-->
+    <form action="" method="POST">
+      <fieldset>
+        <legend><strong>Reserveringsformulier</strong></legend>
+        <br />
+        <label for="Fname">Firstname :</label>
+        <input type="text" id="Fname" name="Fname" /><br /><br />
+        <label for="Lname">Lastname :</label>
+        <input type="text" id="Lname" name="Lname" /><br /><br />
+        <label for="Email">Email Address:</label>
+        <input type="text" id="email" name="email" /><br /><br />
+        <label for="lidM">Membership :</label>
+        <label for="lidM">Yes</label>
+        <input type="radio" value="Ja" id="lidM" name="lidM" />
+        <label for="lidM">No</label>
+        <input type="radio" value="Nee" id="lidM" name="lidM" /><br /><br />
+        <label for="Sport">Choose a sport</label>
+        <select name="Sport" id="Sport">
+          <option value="Tennis">tennis</option>
+          <option value="Badminton">badminton</option>
+          <option value="Squash">Squash</option>
+          <option value="Tafeltennis">Tabletennis</option></select
+        ><br /><br />
+        <label for="Rdate">Reservation date :</label>
+        <input type="date" id="Rdate" name="Rdate" /><br /><br />
+        <label for="Rtime">Reservation time</label>
+        <input type="time" id="Rtime" name="Rtime" /><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <br /><br />
+    <!-- 8. Maak een reserverings formulier om een boek te reserveren. In dit formulier
+willen we graag het volgende weten:
+● Naam van dat persoon
+● Telefoonnummer
+● E-mail van dat persoon
+● Naam van dat boek
+● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
+zijn.
+● Een submit knop -->
+
+    <form action="" method="POST">
+      <fieldset>
+        <legend><strong>Book Reservation Form</strong></legend>
+        <br />
+        <label for="Fname">Firstname :</label>
+        <input
+          type="text"
+          id="Fname"
+          name="Fname"
+          placeholder="Firstname"
+        /><br /><br />
+        <label for="Lname">Lastname :</label>
+        <input
+          type="text"
+          id="Lname"
+          name="Lname"
+          placeholder="Lastname"
+        /><br /><br />
+        <label for="email">Email Address :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="YourEmail@gmail.com"
+        /><br /><br />
+        <label for="Tnumber">Telephone Number :</label>
+        <input
+          type="tel"
+          id="Tnumber"
+          name="Tnumber"
+          placeholder="(Area code)Number"
+        /><br /><br />
+        <label for="Abooks"
+          >How many books would you like to reserve?&nbsp;</label
+        >
+        <select name="Abooks" id="Abooks">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option></select
+        ><br /><br />
+        <label for="Bname">Book 1 :</label>
+        <input type="text" id="Bname" name="Bname" /><br /><br />
+        <label for="Bname">Book 2 :</label>
+        <input type="text" id="Bname" name="Bname" /><br /><br />
+        <label for="Bname">Book 3 :</label>
+        <input type="text" id="Bname" name="Bname" /><br /><br />
+        <label for="Bname">Book 4 :</label>
+        <input type="text" id="Bname" name="Bname" /><br /><br />
+        <label for="Bname">Book 5 :</label>
+        <input type="text" id="Bname" name="Bname" /><br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <br /><br />
+
+    <!-- 9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd. -->
+
+    <form action="" method="POST">
+      <fieldset>
+        <legend><strong>Music Lesson Registration</strong></legend>
+        <br />
+        <label for="Fname">Firstname :</label>
+        <input
+          type="text"
+          id="Fname"
+          name="Fname"
+          placeholder="Firstname"
+        /><br /><br />
+        <label for="Lname">Lastname :</label>
+        <input
+          type="text"
+          id="Lname"
+          name="Lname"
+          placeholder="Lastname"
+        /><br /><br />
+        <label for="email">Email Address :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your_Email@gmail.com"
+        /><br /><br />
+        <label for="Tnumber">Telephone Number :</label>
+        <input
+          type="tel"
+          id="Tnumber"
+          name="Tnumber"
+          placeholder="(Area code)Number"
+        /><br /><br />
+        <label for="Courses">Which course would you want to take?&nbsp;</label>
+        <select name="Courses" id="Courses">
+          <option value="Vocal Lab">Vocal Lab</option>
+          <option value="Beginner Harmony Lab">Beginner Harmony Lab</option>
+          <option value="Advanced Harmony Lab">Advanced Harmony Lab</option>
+          <option value="Jazz Guitar Lab">Jazz guitar Lab</option>
+          <option value="Piano Lab">Piano Lab</option>
+          <option value="Saxophone Lab">Saxophone Lab</option>
+          <option value="Trumpet Lab">Trumpet Lab</option></select
+        ><br /><br />
+        <label for="Availability">On which day(s) would you be available?</label
+        ><br />
+        <ul>
+          <li>
+            <input type="checkbox" id="availabilty" name="availability" />Monday
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="availabilty"
+              name="availability"
+            />Tuesday
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="availabilty"
+              name="availability"
+            />Wednesday
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="availabilty"
+              name="availability"
+            />Thursday
+          </li>
+          <li>
+            <input type="checkbox" id="availabilty" name="availability" />Friday
+          </li>
+        </ul>
+
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+
+    <!-- HTML tables
+
+
+10. Om een tabel te maken heb je volgende elementen nodig:
+Geef voor elke element een definitie.
+
+
+● <table> >>>  defines a table in HTML
+● <thead> >>>  is used to group header content together in a HTML table  
+● <tbody> >>>  is used to group the body content together in a HTML table
+● <tfoot> >>>  is used to group the footer content together in a HTML table  
+● <th>    >>>  defines a header cell in a HTML table
+● <tr>    >>>  defines a row in a HTML table
+● <td>    >>>  defines a data cell in a HTML table
+
+
+
+  11. Maak een tabel met <table> element.
+-->
+    <h2>TABLES</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Voornaam</th>
+          <th>Achternaam</th>
+          <th>Leeftijd</th>
+          <th>Telefoonnummer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>32</td>
+          <td>+31 12387218</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>32</td>
+          <td>+31 12387218</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>32</td>
+          <td>+31 12387218</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 12. Maak een agenda tabel met <table> element. -->
+
+    <h2>Agenda</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Maandag</th>
+          <th>Dinsdag</th>
+          <th>Woensdag</th>
+          <th>Donderdag</th>
+          <th>Vrijdag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Afspraak Tandarts</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Sporten</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Huiswerk maken</td>
+          <td>Werken</td>
+          <td>Werken</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Afspraak tandarts</td>
+          <td></td>
+          <td></td>
+          <td>Werken</td>
+          <td>Zuipen</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+
+    <!-- 13. Voor het maken van een tabel kan je ook gebruik maken van colspan en
+rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en meet
+het volgende: -->
+
+    <h2>Rowspan & Colspan</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Sport</th>
+          <th>Aantal recreanten</th>
+          <th>Aantal Competitie spelers</th>
+          <th>Totale deelnemers</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Racket sport</td>
+          <td>Badminton</td>
+          <td>10</td>
+          <td>30</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>tennis</td>
+          <td>10</td>
+          <td>30</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>tafeltennis</td>
+          <td>10</td>
+          <td>30</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Bal sport</td>
+          <td>Voetbal</td>
+          <td>10</td>
+          <td>30</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>volleybal</td>
+          <td>10</td>
+          <td>30</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>basketball</td>
+          <td>10</td>
+          <td>30</td>
+          <td>40</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 14. Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd. -->
+
+    <h2>Maak Eigen Tabel</h2>
+
+    <fieldset>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Studenten</th>
+            <th>maandag</th>
+            <th>dinsdag</th>
+            <th>woensdag</th>
+            <th>donderdag</th>
+            <th>vrijdag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">gitaarles</td>
+            <td>Mike P</td>
+            <td></td>
+            <td>aanwezig</td>
+            <td></td>
+            <td></td>
+            <td>afgemeld</td>
+          </tr>
+          <tr>
+            <td>Alysha V</td>
+            <td></td>
+            <td>aanwezig</td>
+            <td></td>
+            <td>afgemeld</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ronald D</td>
+            <td>afgemeld</td>
+            <td>aanwezig</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Pianoles</td>
+            <td>Ana C</td>
+            <td></td>
+            <td></td>
+            <td>afgemeld</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Anna P</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>afgemeld</td>
+            <td>aanwezig</td>
+          </tr>
+          <tr>
+            <td>Coleen S</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>afgemeld</td>
+            <td>aanwezig</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
   </body>
 </html>
