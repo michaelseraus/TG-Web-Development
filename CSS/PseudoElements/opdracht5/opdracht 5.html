@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .textContainer {
+        position: relative;
+        width: 750px;
+        height: auto;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .textContainer::before {
+        content: url(/CSS/PseudoElements/opdracht5/dog.jpg);
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        /* background: url(/CSS/PseudoElements/opdracht5/dog.jpg); Als ik het zo doe, kan ik de image ook resizen .*/
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="textContainer">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, aliquid
+      molestiae recusandae quia culpa incidunt. Dolorum non delectus, sunt modi
+      doloremque eaque placeat unde voluptatem, voluptas maiores, libero nobis
+      ea? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+      consequuntur repellendus, doloribus libero quasi, non nemo quaerat id sit
+      eaque, numquam fuga tenetur corporis dolorem perferendis officia.
+      Excepturi, quam ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Voluptatem natus distinctio hic repellendus eligendi inventore
+      adipisci. Perferendis neque illum molestiae. Aliquam saepe corporis
+      nostrum! Dolorem nostrum id accusamus recusandae illo! Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Accusamus neque consequatur
+      blanditiis iure in assumenda sit magni ex aliquam ullam. Laborum
+      accusantium nemo, libero natus placeat sapiente omnis adipisci iure. Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Mollitia suscipit,
+      quibusdam dolor esse blanditiis ipsum culpa unde possimus odit?
+      Asperiores, nobis maiores placeat consequuntur at ducimus deleniti illo
+      laborum provident. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Nemo dicta recusandae exercitationem consequuntur, voluptatum
+      ratione blanditiis est voluptates nihil, nobis cum totam sit quas
+      assumenda error rem molestias rerum? Similique. Lorem ipsum, dolor sit
+      amet consectetur adipisicing elit. Voluptate illum iure hic quod dolores
+      nulla delectus saepe distinctio sint facere veniam deleniti perspiciatis
+      neque, recusandae aperiam praesentium est modi omnis.
+    </div>
+  </body>
+</html>

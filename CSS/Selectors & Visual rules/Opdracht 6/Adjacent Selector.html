@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border-style: solid;
+      }
+
+      div + p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Content inside div</p>
+      <p>Content inside div</p>
+      <p>Content inside div</p>
+    </div>
+    <p>Content does get selected cause is immediatly after the div</p>
+    <p>
+      Content outside div and not right after either ; stays uneffected by
+      Adjacent selector
+    </p>
+    <p>
+      Content outside div and not right after either ; stays uneffected by
+      Adjacent selector
+    </p>
+  </body>
+</html>

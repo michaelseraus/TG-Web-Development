@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexCont {
+        display: flex;
+      }
+
+      .block {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        background-color: lightblue;
+        text-align: center;
+      }
+
+      .Flexstart {
+        display: flex;
+        background-color: lightcoral;
+        width: 800px;
+        height: 300px;
+      }
+
+      .Center {
+        display: flex;
+        align-items: center;
+        background-color: lightcoral;
+        width: 800px;
+        height: 300px;
+      }
+
+      .Flexend {
+        display: flex;
+        align-items: flex-end;
+        background-color: lightcoral;
+        width: 800px;
+        height: 300px;
+      }
+
+      .Stretch {
+        display: flex;
+        align-items: stretch;
+        background-color: lightcoral;
+        width: 800px;
+        height: 300px;
+      }
+      .Stretch .block {
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-Start</h1>
+    <div class="Flexstart">
+      <div class="block">1</div>
+      <div class="block">2</div>
+      <div class="block">3</div>
+      <div class="block">4</div>
+      <div class="block">5</div>
+    </div>
+
+    <h1>Center</h1>
+    <div class="Center">
+      <div class="block">1</div>
+      <div class="block">2</div>
+      <div class="block">3</div>
+      <div class="block">4</div>
+      <div class="block">5</div>
+    </div>
+
+    <h1>Flex-end</h1>
+    <div class="Flexend">
+      <div class="block">1</div>
+      <div class="block">2</div>
+      <div class="block">3</div>
+      <div class="block">4</div>
+      <div class="block">5</div>
+    </div>
+
+    <h1>Stretch</h1>
+
+    <div class="Stretch">
+      <div class="block">1</div>
+      <div class="block">2</div>
+      <div class="block">3</div>
+      <div class="block">4</div>
+      <div class="block">5</div>
+    </div>
+  </body>
+</html>

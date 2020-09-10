@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .inline {
+        display: inline;
+        border-style: solid;
+      }
+      div {
+        background-color: green;
+        border-style: solid;
+      }
+      span {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      dit is een block box en neemt de hele breedte in waardoor de volgende op
+      de volgende regel zit.
+    </div>
+    <br />
+    <div class="inline">
+      in dit blok zit <span>inline tekst</span>
+      <div class="inline">in wat dus niet op de volgende regel komt te</div>
+      <span>staan</span>
+    </div>
+  </body>
+</html>

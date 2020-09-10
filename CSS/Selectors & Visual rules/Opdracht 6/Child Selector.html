@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div > p {
+        background-color: green;
+      }
+
+      div {
+        border-style: solid;
+      }
+
+      div ~ p {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Example For Child Selector</p>
+
+      <p>Example For Child Selector</p>
+      <p>Example For Child Selector</p>
+    </div>
+    <p>
+      These will not be affected cause they are NOT childs of " div" element
+    </p>
+    <p>
+      These will not be affected cause they are NOT childs of " div" element
+    </p>
+  </body>
+</html>
