@@ -12,26 +12,55 @@
         display: flex;
         flex-wrap: wrap;
       }
-      .box {
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5,
+      .box6 {
         height: 100px;
         width: 100px;
-        background-color: lightcoral;
         display: flex;
-        justify-content: center;
         align-items: center;
-        border: 1px solid;
+        justify-content: center;
+        border: 1px solid black;
         border-radius: 8px;
+      }
+
+      .box1 {
+        background-color: #ffffe1;
+      }
+
+      .box2 {
+        background-color: #89cff8;
+      }
+
+      .box3 {
+        background-color: #c2f8c9;
+      }
+
+      .box5 {
+        background-color: #000000;
+        color: white;
+      }
+
+      .box6 {
+        background: linear-gradient(
+          90deg,
+          rgba(91, 94, 252, 1) 43%,
+          rgba(183, 228, 254, 1) 100%
+        );
       }
     </style>
   </head>
   <body>
     <div class="boxesCont">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
-      <div class="box">6</div>
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
     </div>
   </body>
 </html>
