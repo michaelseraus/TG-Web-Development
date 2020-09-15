@@ -4,7 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style></style>
+    <style>
+      .container {
+        width: 50%;
+        height: 80vh;
+        border: 1px solid;
+      }
+
+      .penguinCont {
+        border: 3px solid;
+        width: 48%;
+        position: relative;
+      }
+
+      img {
+        transition: 2s;
+        opacity: 0.2;
+      }
+
+      .cover {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: crimson;
+        transition: 1s;
+      }
+      .penguinCont:hover img {
+        opacity: 1;
+        filter: sepia(100%);
+      }
+
+      .penguinCont:hover .cover {
+        top: 184px;
+        bottom: -184px;
+        left: 200px;
+        right: -200px;
+        transform: rotate(40deg);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="penguinCont">
+        <img src="penguin.png" alt="" />
+        <div class="cover"></div>
+      </div>
+    </div>
+  </body>
 </html>
