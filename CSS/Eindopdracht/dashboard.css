@@ -23,6 +23,10 @@ nav {
   display: flex;
 }
 
+.link p:hover {
+  scale: 1.1;
+}
+
 .icons {
   display: flex;
   flex-direction: column;
@@ -49,7 +53,8 @@ i {
   margin-bottom: 13px;
   margin-right: 10px;
 }
-/* MEMBERINFO */
+
+/* MEMBERS*/
 .stats {
   width: 80%;
   height: 100vh;
@@ -95,8 +100,10 @@ i {
 
 .members tr:hover {
   background-color: #4b86cb;
+  color: white;
 }
 
+/* ADDITIONAL INFORMATION */
 form {
   width: 70%;
   height: 250px;
