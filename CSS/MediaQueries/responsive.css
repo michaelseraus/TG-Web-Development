@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background-image: url(../MediaQueries/images/space.jpg);
+  background-image: url("../MediaQueries/images/space.jpg");
 
   height: 100%;
 
@@ -42,7 +42,7 @@ body {
 
   width: 80px;
 
-  background-image: url(../MediaQueries/images/spaceship.png);
+  background-image: url("../MediaQueries/images/spaceship.png");
 
   background-size: contain;
 
