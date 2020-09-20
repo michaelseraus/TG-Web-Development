@@ -25,9 +25,14 @@ nav {
 
 p {
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .link p:hover {
+  scale: 1.1;
+}
+
+.link p:hover i {
   scale: 1.1;
 }
 
@@ -377,6 +382,6 @@ input[type="email"]:focus {
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   body {
-    height: 100vh;
+    height: 90vh;
   }
 }
