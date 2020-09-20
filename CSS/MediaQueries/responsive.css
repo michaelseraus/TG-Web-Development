@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background-image: url(/CSS/MediaQueries/images/space.jpg);
+  background-image: url(../MediaQueries/images/space.jpg);
 
   height: 100%;
 
@@ -42,7 +42,7 @@ body {
 
   width: 80px;
 
-  background-image: url(/CSS/MediaQueries/images/spaceship.png);
+  background-image: url(../MediaQueries/images/spaceship.png);
 
   background-size: contain;
 
@@ -168,7 +168,7 @@ nav a {
 
 @media only screen and (min-resolution: 90dpi) {
   .logo {
-    background-image: url(/CSS/MediaQueries/images/spaceship2.png);
+    background-image: url(../MediaQueries/images/spaceship2.png);
   }
 }
 
