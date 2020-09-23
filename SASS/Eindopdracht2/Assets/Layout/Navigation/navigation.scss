@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 100vh;
+  background-color: #4b86cb;
+  color: white;
+
+  .links {
+    display: flex;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    margin: 8px auto;
+  }
+
+  p {
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 20px auto;
+  }
+
+  .link p:hover {
+    scale: 1.1;
+  }
+
+  .link p:hover i {
+    scale: 1.1;
+  }
+
+  h2 {
+    margin: 10px auto;
+    text-transform: capitalize;
+  }
+
+  hr {
+    margin-bottom: 10px;
+    color: #85b4df;
+    width: 100%;
+  }
+
+  i {
+    margin-top: 12px;
+    margin-bottom: 13px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,44 @@
+.popG {
+  text-align: center;
+  text-transform: capitalize;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.popG .pCard {
+  margin-top: 40px;
+  width: 300px;
+}
+
+.popG .pCard .pasta {
+  height: 220px;
+  width: 235px;
+  border-radius: 50%;
+}
+
+.popG .pCard .pInfo {
+  width: auto;
+}
+
+.popG .pCard .priceFlex {
+  margin: 7px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bolder;
+  color: #6187d8;
+}
+
+.popG .pCard .showM {
+  text-align: end;
+  margin-top: 4px;
+}
+/*# sourceMappingURL=populaire-gerechten.css.map */

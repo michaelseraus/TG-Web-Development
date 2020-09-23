@@ -1,0 +1,49 @@
+@import "../../colors/colors.scss";
+
+footer {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  height: 180px;
+  background-color: rgb(128, 179, 128);
+  color: #6187d8;
+
+  & ul {
+    list-style: none;
+
+    & li {
+      margin-bottom: 3px;
+    }
+  }
+
+  & h2 {
+    margin-bottom: 10px;
+  }
+
+  .contact,
+  .navigation {
+    margin: 15px 1px;
+  }
+
+  i {
+    scale: 1.5;
+    margin-right: 12px;
+    cursor: pointer;
+
+    &:hover {
+      animation: spinaround 1s linear;
+    }
+  }
+
+  @keyframes spinaround {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}

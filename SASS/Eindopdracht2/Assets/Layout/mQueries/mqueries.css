@@ -1,0 +1,107 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    height: 185px;
+    width: 100%;
+  }
+  nav .icons {
+    display: none;
+  }
+  .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stats {
+    width: 100%;
+    height: 100%;
+  }
+  .stats .row1,
+  .stats .row2,
+  .stats .row3,
+  .stats .row4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-top: auto;
+  }
+  .stats .row1 > div {
+    width: 100%;
+  }
+  .stats .row2 > div {
+    width: 100%;
+  }
+  .stats .row3 > div {
+    width: 100%;
+  }
+  .stats .row4 > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    height: 185px;
+    width: 100%;
+  }
+  nav .icons {
+    display: none;
+  }
+  .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 250px;
+  }
+  .stats {
+    width: 100%;
+    height: 100%;
+  }
+  .stats .row1,
+  .stats .row2,
+  .stats .row3,
+  .stats .row4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-top: auto;
+  }
+  .stats .row1 > div {
+    width: 100%;
+  }
+  .stats .row2 > div {
+    width: 100%;
+  }
+  .stats .row3 > div {
+    width: 100%;
+  }
+  .stats .row4 > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  body {
+    height: 90vh;
+  }
+}
+/*# sourceMappingURL=mqueries.css.map */

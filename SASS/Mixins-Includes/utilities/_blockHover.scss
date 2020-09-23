@@ -1,0 +1,12 @@
+@mixin block {
+  height: 100px;
+  width: 108px;
+  border: none;
+  background-color: cadetblue;
+  transition: 2s;
+  margin-top: 4px;
+
+  &:hover {
+    background-color: coral;
+  }
+}

@@ -1,0 +1,47 @@
+.stats {
+  width: 80%;
+  height: 100vh;
+  background-color: #fbf8f3;
+
+  h1 {
+    text-align: center;
+    color: #4b86cb;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    width: 97%;
+    margin-left: 10px;
+    color: #eeeff1;
+    margin-bottom: 10px;
+  }
+
+  .members {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    & tr:nth-child(even) {
+      background-color: #a0aec0;
+      padding: 2px;
+    }
+    & th {
+      color: white;
+      background-color: #4b86cb;
+    }
+
+    & th,
+    & td {
+      text-align: left;
+      border: 1px solid #eeeff1;
+      margin-left: 5px;
+    }
+
+    & tr:hover {
+      background-color: #4b86cb;
+      color: white;
+    }
+  }
+}

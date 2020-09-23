@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #b0a9a9;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #6187d8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+section + h1 {
+  color: #6187d8;
+  text-align: center;
+}
+
+.links:hover {
+  color: #80b380;
+  border-color: #6187d8;
+  background-color: #6187d8;
+  padding: 4px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=resets.css.map */

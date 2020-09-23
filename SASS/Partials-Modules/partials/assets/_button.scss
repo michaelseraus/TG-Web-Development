@@ -1,0 +1,13 @@
+@import "./colors";
+
+button {
+  padding: 20px 30px;
+  color: $primary-color;
+  background-color: $button-color;
+  border: none;
+
+  &:hover {
+    color: $secondary-color;
+    background-color: $button-hover-color;
+  }
+}

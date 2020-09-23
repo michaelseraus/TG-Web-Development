@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  height: auto;
+  font-size: 13px;
+
+  .chef {
+    width: 460px;
+    margin-top: 40px;
+  }
+
+  .menuCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+
+    .menuT {
+      width: 265px;
+      height: 150px;
+    }
+  }
+}

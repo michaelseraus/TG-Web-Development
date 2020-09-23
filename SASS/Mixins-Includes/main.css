@@ -1,0 +1,30 @@
+button {
+  padding: 20px 30px;
+  color: black;
+  background-color: salmon;
+  border: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+button:hover {
+  color: salmon;
+  background-color: black;
+  -webkit-box-shadow: 0 0 0 1px;
+          box-shadow: 0 0 0 1px;
+}
+
+.colorChangingSquare {
+  height: 100px;
+  width: 108px;
+  border: none;
+  background-color: cadetblue;
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-top: 4px;
+}
+
+.colorChangingSquare:hover {
+  background-color: coral;
+}
+/*# sourceMappingURL=main.css.map */

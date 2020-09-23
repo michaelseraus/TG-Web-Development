@@ -1,0 +1,146 @@
+form {
+  width: 70%;
+  height: 250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form input {
+  background-color: #c5deea;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="text"]:focus, form input[type="number"]:focus,
+form input [type="email"]:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #4b86cb;
+          box-shadow: 0 0 0 2px #4b86cb;
+}
+
+form .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+form .row2,
+form .row3,
+form .row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: -50px;
+}
+
+form .fName {
+  width: 55%;
+  height: 60px;
+}
+
+form .fName input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .surname {
+  width: 23%;
+  height: 60px;
+}
+
+form .surname input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .age {
+  width: 22%;
+  height: 60px;
+}
+
+form .age input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .company {
+  width: 40%;
+  height: 60px;
+}
+
+form .company input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .username {
+  width: 25%;
+  height: 60px;
+}
+
+form .username input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .email {
+  width: 35%;
+  height: 60px;
+}
+
+form .email input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .address {
+  width: 100%;
+  height: 60px;
+}
+
+form .address input {
+  width: 99%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+form .city {
+  width: 40%;
+  height: 60px;
+}
+
+form .city input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .country {
+  width: 25%;
+  height: 60px;
+}
+
+form .country input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .postalcode {
+  width: 35%;
+  height: 60px;
+}
+
+form .postalcode input {
+  width: 98%;
+  padding: 5px;
+}
+/*# sourceMappingURL=Add-Info.css.map */

@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 100vh;
+  background-color: #4b86cb;
+  color: white;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8px auto;
+}
+
+nav p {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 20px auto;
+}
+
+nav .link p:hover {
+  scale: 1.1;
+}
+
+nav .link p:hover i {
+  scale: 1.1;
+}
+
+nav h2 {
+  margin: 10px auto;
+  text-transform: capitalize;
+}
+
+nav hr {
+  margin-bottom: 10px;
+  color: #85b4df;
+  width: 100%;
+}
+
+nav i {
+  margin-top: 12px;
+  margin-bottom: 13px;
+  margin-right: 10px;
+}
+
+.stats {
+  width: 80%;
+  height: 100vh;
+  background-color: #fbf8f3;
+}
+
+.stats h1 {
+  text-align: center;
+  color: #4b86cb;
+  text-transform: capitalize;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.stats hr {
+  width: 97%;
+  margin-left: 10px;
+  color: #eeeff1;
+  margin-bottom: 10px;
+}
+
+.stats .members {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.stats .members tr:nth-child(even) {
+  background-color: #a0aec0;
+  padding: 2px;
+}
+
+.stats .members th {
+  color: white;
+  background-color: #4b86cb;
+}
+
+.stats .members th,
+.stats .members td {
+  text-align: left;
+  border: 1px solid #eeeff1;
+  margin-left: 5px;
+}
+
+.stats .members tr:hover {
+  background-color: #4b86cb;
+  color: white;
+}
+
+form {
+  width: 70%;
+  height: 250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form input {
+  background-color: #c5deea;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="text"]:focus, form input[type="number"]:focus,
+form input [type="email"]:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #4b86cb;
+          box-shadow: 0 0 0 2px #4b86cb;
+}
+
+form .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+form .row2,
+form .row3,
+form .row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-top: -50px;
+}
+
+form .fName {
+  width: 55%;
+  height: 60px;
+}
+
+form .fName input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .surname {
+  width: 23%;
+  height: 60px;
+}
+
+form .surname input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .age {
+  width: 22%;
+  height: 60px;
+}
+
+form .age input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .company {
+  width: 40%;
+  height: 60px;
+}
+
+form .company input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .username {
+  width: 25%;
+  height: 60px;
+}
+
+form .username input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .email {
+  width: 35%;
+  height: 60px;
+}
+
+form .email input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .address {
+  width: 100%;
+  height: 60px;
+}
+
+form .address input {
+  width: 99%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+form .city {
+  width: 40%;
+  height: 60px;
+}
+
+form .city input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .country {
+  width: 25%;
+  height: 60px;
+}
+
+form .country input {
+  width: 98%;
+  padding: 5px;
+}
+
+form .postalcode {
+  width: 35%;
+  height: 60px;
+}
+
+form .postalcode input {
+  width: 98%;
+  padding: 5px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    height: 185px;
+    width: 100%;
+  }
+  nav .icons {
+    display: none;
+  }
+  .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .stats {
+    width: 100%;
+    height: 100%;
+  }
+  .stats .row1,
+  .stats .row2,
+  .stats .row3,
+  .stats .row4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-top: auto;
+  }
+  .stats .row1 > div {
+    width: 100%;
+  }
+  .stats .row2 > div {
+    width: 100%;
+  }
+  .stats .row3 > div {
+    width: 100%;
+  }
+  .stats .row4 > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    height: 185px;
+    width: 100%;
+  }
+  nav .icons {
+    display: none;
+  }
+  .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 250px;
+  }
+  .stats {
+    width: 100%;
+    height: 100%;
+  }
+  .stats .row1,
+  .stats .row2,
+  .stats .row3,
+  .stats .row4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin-top: auto;
+  }
+  .stats .row1 > div {
+    width: 100%;
+  }
+  .stats .row2 > div {
+    width: 100%;
+  }
+  .stats .row3 > div {
+    width: 100%;
+  }
+  .stats .row4 > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  body {
+    height: 90vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

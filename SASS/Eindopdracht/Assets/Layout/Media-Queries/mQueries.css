@@ -1,0 +1,111 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .bannerT {
+    margin: 80px auto;
+    text-align: center;
+  }
+  button {
+    display: block;
+    margin: 12px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popG {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .chef {
+    display: none;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .bannerT {
+    margin: 80px auto;
+    text-align: center;
+  }
+  button {
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popG {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .chef {
+    display: none;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .popG {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .priceFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .pInfo {
+    min-width: 450px;
+    margin-left: 20px;
+  }
+  .chef {
+    display: none;
+  }
+  .menuCards {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .pCard {
+    scale: 0.8;
+  }
+}
+/*# sourceMappingURL=mQueries.css.map */

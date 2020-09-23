@@ -1,0 +1,13 @@
+@mixin btn-style {
+  padding: 20px 30px;
+  color: black;
+  background-color: salmon;
+  border: none;
+  transition: 2s;
+
+  &:hover {
+    color: salmon;
+    background-color: black;
+    box-shadow: 0 0 0 1px;
+  }
+}

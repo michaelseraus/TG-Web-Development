@@ -1,0 +1,36 @@
+.banner {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../Eindopdracht/Images/cooking.jpg);
+  background-size: cover;
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+  z-index: -1;
+}
+
+.bannerT {
+  margin-top: 100px;
+  margin-right: 225px;
+  width: 350px;
+  color: #6187d8;
+}
+/*# sourceMappingURL=banner.css.map */

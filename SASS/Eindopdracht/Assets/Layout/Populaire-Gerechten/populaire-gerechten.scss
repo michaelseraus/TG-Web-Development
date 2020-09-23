@@ -1,0 +1,37 @@
+@import "../../colors/colors.scss";
+
+.popG {
+  text-align: center;
+  text-transform: capitalize;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+
+  .pCard {
+    margin-top: 40px;
+    width: 300px;
+
+    .pasta {
+      height: 220px;
+      width: 235px;
+      border-radius: 50%;
+    }
+
+    .pInfo {
+      width: auto;
+    }
+
+    .priceFlex {
+      margin: 7px 0px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bolder;
+      color: $primary-color;
+    }
+    .showM {
+      text-align: end;
+      margin-top: 4px;
+    }
+  }
+}
