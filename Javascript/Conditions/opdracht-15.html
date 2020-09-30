@@ -125,12 +125,12 @@
 
         if (obj.children[1].innerHTML == guessingWord) {
           labelText.innerHTML =
-            "You have correctly guessed the word!!" + obj.children[1].innerHTML;
+            "You have correctly guessed the word!! " + guessingWord;
         } else if (maxCount != count) {
           countText.innerHTML = count;
         } else {
           countText.innerHTML = count;
-          labelText.innerHTML = "Game Over";
+          labelText.innerHTML = "Game Over! The answer was : " + guessingWord;
         }
       }
     </script>
