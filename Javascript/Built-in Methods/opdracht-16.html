@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Built-in Methods</h1>
+
+    <p>
+      Maak een eigen voorbeeld van de volgende functies en licht toe wat de
+      functie doet in het blok:
+    </p>
+
+    <ol>
+      <li>charAt()</li>
+      <li>conCat()</li>
+      <li>slice()</li>
+      <li>split()</li>
+      <li>substr()</li>
+    </ol>
+
+    <h3>charAt()</h3>
+
+    <p>
+      let sentance = 'abcdefg' <br />
+      console.log(sentance.charAt(4)); <strong>"E"</strong>
+    </p>
+
+    <h3>conCat()</h3>
+
+    let str1 = 'hello'; <br />
+    let str2 = 'world'; <br />
+    console.log(str1.conCat(" ", str2)); <strong>"hello world"</strong>
+
+    <h3>slice()</h3>
+    let str = "abcdefg"; <br />
+    console.log(str.slice(0, 3)); <strong>"abc"</strong>
+
+    <h3>split()</h3>
+    let str = "abc def ghi jkl mno"; <br />
+    console.log(str.split(" "));
+    <strong> array[ "abc", "def", "ghi", "jkl", "mno"] </strong>
+
+    <h3>substr()</h3>
+    let str = "Hello"; <br />
+    console.log(str.substr(1)); <strong>llo</strong>
+    <script>
+      let str = "Hello";
+
+      console.log(str.substr(2));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">
+      Opdrachten over undefined en getallen aan variable toekennen.
+    </h2>
+
+    <ol>
+      <li>Maak een variable aan met const en noem het getal2.</li>
+      <li>Ken geen waarde toe aan de variable.</li>
+      <li>Print vervolgens de variable met console.log(“getal2” + getal1);.</li>
+    </ol>
+
+    <h3 style="text-align: center">
+      Open dit html bestand in jouw browser en kijk in je console. Wat zie je
+      dan?
+    </h3>
+
+    <p>
+      bij <code> const getal2; console.log("getal2"+ getal2);</code> krijg ik
+      dan : Uncaught SyntaxError: missing = in const declaration
+    </p>
+
+    <p>
+      bij <code> const getal2 = 4; console.log("getal2" + getal2);</code> krijg
+      ik dan : getal24
+    </p>
+
+    <script>
+      /*  const getal2;
+      console.log("getal2"+ getal2); */
+
+      const getal2 = 4;
+      console.log("getal2" + getal2);
+    </script>
+  </body>
+</html>

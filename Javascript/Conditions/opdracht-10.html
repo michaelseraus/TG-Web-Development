@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="number" name="number" id="number" />
+    <button id="btn" onclick="checkNumber()">Button</button>
+
+    <div>
+      <span id="label"></span>
+    </div>
+    <script>
+      function checkNumber() {
+        let inputNumber = document.getElementById("number").value;
+        let label = document.getElementById("label");
+
+        if (inputNumber >= 13 && inputNumber <= 20) {
+          label.innerHTML =
+            "het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20. ";
+        } else {
+          label.innerHTML = "";
+        }
+      }
+    </script>
+  </body>
+</html>
