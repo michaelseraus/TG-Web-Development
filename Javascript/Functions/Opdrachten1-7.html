@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Functions</h1>
+    <h3>
+      Opdracht 1: <br />
+      Schrijf een functie die de tekst “hello world” in de console uitprint.
+      Geef een goede functie naam ervoor.
+    </h3>
+
+    <p id="answer1"></p>
+    <button onclick="printHelloWorld()">click</button>
+
+    <h3>
+      Opdracht 2: <br />
+      Schrijf een functie waarbij je een tekst mee kan geven aan de functie.
+      Print vervolgens de tekst uit in de console.
+    </h3>
+
+    <p id="answer2"></p>
+    <button onclick="printThis('Succesfully printed to console log')">
+      click
+    </button>
+
+    <h3>
+      Opdracht 3: <br />
+      Schrijf een functie waarbij je een getal mee kan geven aan de functie.
+      Print vervolgens het getal uit in de console.
+    </h3>
+
+    <p id="answer3"></p>
+    <button onclick="gaveNumber(5)">click</button>
+
+    <h3>
+      Opdracht 4: <br />
+      Schrijf een functie die twee getallen met elkaar vermenigvuldigt en geef
+      de waarde <br />
+      van de vermenigvuldiging terug. Geef een goede functie naam ervoor.
+    </h3>
+
+    <p id="answer4"></p>
+    <button onclick="printed(answer)">click</button>
+
+    <h3>
+      Opdracht 5: <br />
+      Schrijf een functie waarbij je een naam kan meegeven aan de functie.
+      <br />
+      De functie moet vervolgens controleren of de naam een bekende is. <br />
+      De namen die bekend zijn: <br />
+      <br />
+      John <br />
+      Olly <br />
+      Mo <br />
+      Hendrik <br />
+      Tony <br />
+      <br />
+      Als het een bekende is, dan toon je het volgende tekst op het scherm: “Dit
+      is een bekende van ons: "naam”. <br />
+      Als het niet een bekende is, dan toon je het volgende tekst op het scherm
+      “Onbekend in ons systeem!”
+    </h3>
+    <p id="answer"></p>
+    <input type="text" id="name" name="name" />
+    <button type="" id="btn" onclick="isKnown()">Is Name Known?</button>
+
+    <script>
+      // Opdracht 1
+      function printHelloWorld() {
+        console.log("Hello World");
+        document.getElementById("answer1").innerHTML =
+          "'Hello World' printed in console";
+      }
+      // Opdracht 2
+
+      function printThis(text) {
+        console.log(text);
+        document.getElementById("answer2").innerHTML =
+          "succesfully printed 'printThis(tekst)' in console";
+      }
+
+      // Opdracht 3
+
+      function gaveNumber(getal) {
+        console.log(getal);
+        document.getElementById("answer3").innerHTML =
+          "Succesfully 'gaveNumber(5)' to console";
+      }
+
+      // Opdracht 4
+
+      function printed(answer) {
+        console.log(answer);
+        document.getElementById("answer4").innerHTML =
+          "Succesfuly printed the multiply answer to console ";
+      }
+
+      function multiply(a, b) {
+        return a * b;
+      }
+      let answer = multiply(4, 3);
+
+      // Opdracht 5
+
+      let knownPeople = ["John", "Olly", "Mo", "Hendrik", "Tony"];
+
+      function isKnown() {
+        let name = document.getElementById("name").value;
+        console.log(name);
+        if (knownPeople.includes(name)) {
+          document.getElementById("answer").innerHTML =
+            "dit is een bekende van ons";
+        } else {
+          document.getElementById("answer").innerHTML =
+            "Onbekend in ons systeem";
+        }
+      }
+
+      // Opdracht 6
+    </script>
+  </body>
+</html>
