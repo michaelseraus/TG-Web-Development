@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h3>
+      Schrijf een functie waarbij je een naam kan meegeven aan de functie.
+      <br />
+      De functie moet vervolgens controleren of de naam een bekende is. <br />
+      De namen die bekend zijn: <br />
+      <br />
+      John <br />
+      Olly <br />
+      Mo <br />
+      Hendrik <br />
+      Tony <br />
+      <br />
+      Als het een bekende is, dan toon je het volgende tekst op het scherm: “Dit
+      is een bekende van ons: "naam”. <br />
+      Als het niet een bekende is, dan toon je het volgende tekst op het scherm
+      “Onbekend in ons systeem!”
+    </h3>
+
+    <p id="answer"></p>
+
+    <input type="text" id="name" name="name" />
+    <button type="" id="btn" onclick="isKnown()">Is Name Known?</button>
+
+    <script>
+      let knownPeople = ["john", "Olly", "Mo", "Hendrik", "tony"];
+
+      function isKnown() {
+        let name = document.getElementById("name").value;
+        console.log(name);
+        if (knownPeople.includes(name)) {
+          document.getElementById("answer").innerHTML =
+            "dit is een bekende van ons";
+        } else {
+          document.getElementById("answer").innerHTML =
+            "Onbekend in ons systeem";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -99,6 +99,7 @@
       <span>The number of wrong guesses: <span id="count">0</span></span>
       <p id="label"></p>
     </div>
+    <button id="btn" onclick="resetGame()" disabled>Reset Game</button>
     <script>
       const words = [
         "Together",
@@ -112,26 +113,39 @@
         "Important",
       ];
 
-      const guessingWord = words[Math.round(Math.random() * 8)];
+      let guessingWord = words[Math.round(Math.random() * 8)];
       let labelText = document.getElementById("label");
       let countText = document.getElementById("count");
       let count = 0;
       const maxCount = 3;
 
       function guess(obj) {
-        ++count;
+        if (count == maxCount) {
+          return;
+        }
+        count++;
         console.log(count);
         console.log(guessingWord);
 
         if (obj.children[1].innerHTML == guessingWord) {
           labelText.innerHTML =
             "You have correctly guessed the word!! " + guessingWord;
+          document.getElementById("btn").disabled = false;
         } else if (maxCount != count) {
           countText.innerHTML = count;
         } else {
           countText.innerHTML = count;
           labelText.innerHTML = "Game Over! The answer was : " + guessingWord;
+          document.getElementById("btn").disabled = false;
         }
+      }
+
+      function resetGame() {
+        count = 0;
+        guessingWord = words[Math.round(Math.random() * 8)];
+        countText.innerHTML = count;
+        labelText.innerHTML = "";
+        document.getElementById("btn").disabled = true;
       }
     </script>
   </body>

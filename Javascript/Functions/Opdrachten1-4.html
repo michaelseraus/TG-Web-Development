@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Functions</h1>
+    <h3>
+      Opdracht 1: Schrijf een functie die de tekst “hello world” in de console
+      uitprint. Geef een goede functie naam ervoor.
+    </h3>
+
+    <p id="answer1"></p>
+    <button onclick="printHelloWorld()">click</button>
+
+    <h3>
+      Opdracht 2: Schrijf een functie waarbij je een tekst mee kan geven aan de
+      functie. Print vervolgens de tekst uit in de console.
+    </h3>
+
+    <p id="answer2"></p>
+    <button onclick="printThis('Succesfully printed to console log')">
+      click
+    </button>
+
+    <h3>
+      Opdracht 3: Schrijf een functie waarbij je een getal mee kan geven aan de
+      functie. Print vervolgens het getal uit in de console.
+    </h3>
+
+    <p id="answer3"></p>
+    <button onclick="gaveNumber(5)">click</button>
+
+    <h3>
+      Opdracht 4: Schrijf een functie die twee getallen met elkaar
+      vermenigvuldigt en geef de waarde <br />
+      van de vermenigvuldiging terug. Geef een goede functie naam ervoor.
+    </h3>
+
+    <p id="answer4"></p>
+    <button onclick="printed(answer)">click</button>
+
+    <script>
+      // Opdracht 1
+      function printHelloWorld() {
+        console.log("Hello World");
+        document.getElementById("answer1").innerHTML =
+          "'Hello World' printed in console";
+      }
+      // Opdracht 2
+
+      function printThis(text) {
+        console.log(text);
+        document.getElementById("answer2").innerHTML =
+          "succesfully printed 'printThis(tekst)' in console";
+      }
+
+      // Opdracht 3
+
+      function gaveNumber(getal) {
+        console.log(getal);
+        document.getElementById("answer3").innerHTML =
+          "Succesfully 'gaveNumber(5)' to console";
+      }
+
+      // Opdracht 4
+
+      function printed(answer) {
+        console.log(answer);
+        document.getElementById("answer4").innerHTML =
+          "Succesfuly printed the multiply answer to console ";
+      }
+
+      function multiply(a, b) {
+        return a * b;
+      }
+      let answer = multiply(4, 3);
+    </script>
+  </body>
+</html>
