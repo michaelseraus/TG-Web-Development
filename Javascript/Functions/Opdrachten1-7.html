@@ -64,9 +64,42 @@
       Als het niet een bekende is, dan toon je het volgende tekst op het scherm
       “Onbekend in ons systeem!”
     </h3>
-    <p id="answer"></p>
+    <p id="answer5"></p>
     <input type="text" id="name" name="name" />
     <button type="" id="btn" onclick="isKnown()">Is Name Known?</button>
+
+    <h3>
+      Opdracht 5 uitbreiding: <br />
+      Maak een functie die een random naam teruggeeft. Deze naam geef je
+      vervolgens door aan de functie <br />
+      die je voorheen hebt geschreven om te controleren of de naam een bekende
+      is van ons.
+    </h3>
+
+    <p id="answer51"></p>
+    <input type="text" id="name2" name="name2" />
+    <button type="" id="btn" onclick="isKnown1()">Is Name Known?</button>
+
+    <h3>
+      Opdracht 7: <br />
+      Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld.
+      <br />
+      Wat zijn rest parameters? Geef een voorbeeld. <br />
+      Wat is het verschil tussen rest parameters en expliciete parameters die je
+      aangeeft bij een functie?
+    </h3>
+
+    <p>
+      parameters geef je zo aan een functie e.g : <br />
+      <code> let sum = (a,b) => a + b ;</code>
+      <p>rest parameters zijn parameters die je geen naam hebt gegeven.</p>
+      <p>There are three main differences between rest parameters and the arguments object:</p>
+      <ul>
+        <li>rest parameters are only the ones that haven't been given a separate name (i.e. formally defined in function expression), while the arguments object contains all arguments passed to the function;</li>
+        <li>the arguments object is not a real array, while rest parameters are Array instances, meaning methods like sort, map, forEach or pop can be applied on it directly;</li>
+        <li>the arguments object has additional functionality specific to itself (like the callee property).</li>
+      </ul>
+    </p>
 
     <script>
       // Opdracht 1
@@ -110,17 +143,41 @@
 
       function isKnown() {
         let name = document.getElementById("name").value;
-        console.log(name);
+
         if (knownPeople.includes(name)) {
-          document.getElementById("answer").innerHTML =
+          document.getElementById("answer5").innerHTML =
             "dit is een bekende van ons";
         } else {
-          document.getElementById("answer").innerHTML =
+          document.getElementById("answer5").innerHTML =
             "Onbekend in ons systeem";
         }
       }
 
-      // Opdracht 6
+      // Opdracht 5 Uitbreiding van "app" en van Functions arrow functions gemaakt
+      const knownPeople2 = [
+        "John",
+        "Olly",
+        "Mo",
+        "Hendrik",
+        "Tony",
+        "Irus",
+        "Jan",
+        "Peter"
+      ];
+
+      randomP = () => knownPeople2[Math.round(Math.random() * 7)];
+
+      isKnown1 = () => {
+        let randomPerson = randomP();
+        console.log(randomPerson);
+        if (knownPeople2.includes(randomPerson)) {
+          document.getElementById("answer51").innerHTML =
+            "dit is een bekende van ons";
+        } else {
+          document.getElementById("answer51").innerHTML =
+            "Onbekend in ons systeem";
+        }
+      };
     </script>
   </body>
 </html>

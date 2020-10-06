@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* display: flex; */
+        justify-content: center;
+        background-color: #2c3e50;
+      }
+
+      h3 {
+        color: #ecf0f1;
+      }
+
+      .tableCont {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .tabel {
+        width: 20%;
+      }
+
+      .tabelGem {
+        width: 30%;
+        margin: 0 auto;
+      }
+
+      td ~ td {
+        width: 100%;
+      }
+
+      input {
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      input:focus {
+        outline: none;
+        box-shadow: 0 0 7px 2px #3c492d;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        border-spacing: 5px;
+        background-color: #dfecd0;
+      }
+
+      .lightgreen {
+        background-color: #badc58;
+      }
+
+      .green {
+        background-color: #6ab04c;
+      }
+
+      .red {
+        background-color: #eb4d4b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tableCont">
+      <div class="tabel">
+        <h3 style="text-align: center">Wiskunde</h3>
+        <table>
+          <tr>
+            <th>Naam</th>
+            <th>Cijfer</th>
+          </tr>
+          <tr>
+            <td>Willem</td>
+            <td>
+              <input
+                type="text"
+                class="grades wisCijf"
+                oninput="check(this)"
+                value="3"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jan</td>
+            <td>
+              <input
+                type="text"
+                class="grades wisCijf"
+                oninput="check(this)"
+                value="7"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Kim Sing</td>
+            <td>
+              <input
+                type="text"
+                class="grades wisCijf"
+                oninput="check(this)"
+                value="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Samantha</td>
+            <td>
+              <input
+                type="text"
+                class="grades wisCijf"
+                oninput="check(this)"
+                value="4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Joyce</td>
+            <td>
+              <input
+                type="text"
+                class="grades wisCijf"
+                oninput="check(this)"
+                value="5.5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Garreth</td>
+            <td>
+              <input
+                type="text"
+                class="grades wisCijf"
+                oninput="check(this)"
+                value="1"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="tabel">
+        <h3 style="text-align: center">Natuurkunde</h3>
+        <table>
+          <tr>
+            <th>Naam</th>
+            <th>Cijfer</th>
+          </tr>
+          <tr>
+            <td>Willem</td>
+            <td>
+              <input
+                type="text"
+                class="grades natCijf"
+                oninput="check(this)"
+                value="7"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jan</td>
+            <td>
+              <input
+                type="text"
+                class="grades natCijf"
+                oninput="check(this)"
+                value="5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Kim Sing</td>
+            <td>
+              <input
+                type="text"
+                class="grades natCijf"
+                oninput="check(this)"
+                value="8"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Samantha</td>
+            <td>
+              <input
+                type="text"
+                class="grades natCijf"
+                oninput="check(this)"
+                value="6"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Joyce</td>
+            <td>
+              <input
+                type="text"
+                class="grades natCijf"
+                oninput="check(this)"
+                value="9"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Garreth</td>
+            <td>
+              <input
+                type="text"
+                class="grades natCijf"
+                oninput="check(this)"
+                value="5.5"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="tabel">
+        <h3 style="text-align: center">Nederlands</h3>
+        <table>
+          <tr>
+            <th>Naam</th>
+            <th>Cijfer</th>
+          </tr>
+          <tr>
+            <td>Willem</td>
+            <td>
+              <input
+                type="text"
+                class="grades nedCijf"
+                oninput="check(this)"
+                value="7"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jan</td>
+            <td>
+              <input
+                type="text"
+                class="grades nedCijf"
+                oninput="check(this)"
+                value="7"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Kim Sing</td>
+            <td>
+              <input
+                type="text"
+                class="grades nedCijf"
+                oninput="check(this)"
+                value="4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Samantha</td>
+            <td>
+              <input
+                type="text"
+                class="grades nedCijf"
+                oninput="check(this)"
+                value="8"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Joyce</td>
+            <td>
+              <input
+                type="text"
+                class="grades nedCijf"
+                oninput="check(this)"
+                value="8.5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Garreth</td>
+            <td>
+              <input
+                type="text"
+                class="grades nedCijf"
+                oninput="check(this)"
+                value="4"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="tabel">
+        <h3 style="text-align: center">Engels</h3>
+        <table>
+          <tr>
+            <th>Naam</th>
+            <th>Cijfer</th>
+          </tr>
+          <tr>
+            <td>Willem</td>
+            <td>
+              <input
+                type="text"
+                class="grades engCijf"
+                oninput="check(this)"
+                value="6"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jan</td>
+            <td>
+              <input
+                type="text"
+                class="grades engCijf"
+                oninput="check(this)"
+                value="6"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Kim Sing</td>
+            <td>
+              <input
+                type="text"
+                class="grades engCijf"
+                oninput="check(this)"
+                value="5.5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Samantha</td>
+            <td>
+              <input
+                type="text"
+                class="grades engCijf"
+                oninput="check(this)"
+                value="4.3"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Joyce</td>
+            <td>
+              <input
+                type="text"
+                class="grades engCijf"
+                oninput="check(this)"
+                value="5.5"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Garreth</td>
+            <td>
+              <input
+                type="text"
+                class="grades engCijf"
+                oninput="check(this)"
+                value="8"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tabelGem">
+      <h3 style="text-align: center">Gemiddelde</h3>
+      <table>
+        <tr>
+          <th>Naam</th>
+          <th>Talen</th>
+          <th>Betavakken</th>
+          <th>Bevorderd?</th>
+        </tr>
+        <tr>
+          <td>Willem</td>
+          <td class="grades talen"></td>
+          <td class="grades beta"></td>
+          <td class="bevorderd"></td>
+        </tr>
+        <tr>
+          <td>Jan</td>
+          <td class="grades talen"></td>
+          <td class="grades beta"></td>
+          <td class="bevorderd"></td>
+        </tr>
+        <tr>
+          <td>Kim Sing</td>
+          <td class="grades talen"></td>
+          <td class="grades beta"></td>
+          <td class="bevorderd"></td>
+        </tr>
+        <tr>
+          <td>Samantha</td>
+          <td class="grades talen"></td>
+          <td class="grades beta"></td>
+          <td class="bevorderd"></td>
+        </tr>
+        <tr>
+          <td>Joyce</td>
+          <td class="grades talen"></td>
+          <td class="grades beta"></td>
+          <td class="bevorderd"></td>
+        </tr>
+        <tr>
+          <td>Garreth</td>
+          <td class="grades talen"></td>
+          <td class="grades beta"></td>
+          <td class="bevorderd"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      window.onload = function start() {
+        let inputGrades = document.getElementsByClassName("grades");
+
+        for (i = 0; i < inputGrades.length; i++) {
+          check(inputGrades[i]);
+        }
+      };
+      function check(obj) {
+        let inputNumbers = parseFloat(obj.value);
+        let gemValue = parseFloat(obj.textContent);
+        if (inputNumbers < 5.5 || gemValue < 5.5) {
+          obj.style.background = "#eb4d4b";
+        } else if (inputNumbers < 7.5 || gemValue < 7.5) {
+          obj.style.background = "#badc58";
+        } else if (inputNumbers <= 10 || gemValue <= 10) {
+          obj.style.background = "#6ab04c";
+        }
+      }
+
+      let wisCollection = document.getElementsByClassName("wisCijf");
+      let natCollection = document.getElementsByClassName("natCijf");
+      let nedCollection = document.getElementsByClassName("nedCijf");
+      let engCollection = document.getElementsByClassName("engCijf");
+      let talen = document.getElementsByClassName("talen");
+      let beta = document.getElementsByClassName("beta");
+      let bevorderd = document.getElementsByClassName("bevorderd");
+
+      for (i = 0; i < wisCollection.length; i++) {
+        let wisGrades = parseFloat(wisCollection[i].value);
+        let natGrades = parseFloat(natCollection[i].value);
+        let nedGrades = parseFloat(nedCollection[i].value);
+        let engGrades = parseFloat(engCollection[i].value);
+        let talenGem = (nedGrades + engGrades) / 2;
+        let betaGem = (wisGrades + natGrades) / 2;
+        let bevJa = (talenGem + betaGem) / 2;
+
+        talen[i].textContent = talenGem;
+        beta[i].textContent = betaGem;
+
+        if (bevJa < 6.5) {
+          bevorderd[i].textContent = "Nee";
+          bevorderd[i].style.background = "#eb4d4b";
+        } else {
+          bevorderd[i].textContent = "Ja";
+          bevorderd[i].style.background = "#6ab04c";
+        }
+      }
+    </script>
+  </body>
+</html>
