@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      .gameCont {
+        width: 800px;
+        height: 350px;
+        background-color: black;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .keuze1 {
+        width: 395px;
+        height: 350px;
+      }
+      .keuze2 {
+        width: 395px;
+        height: 350px;
+      }
+      .rock__image {
+        background-image: url("./Images/rock\ .png");
+        background-size: cover;
+      }
+      .paper__image {
+        background-image: url("./Images/paper\ .png");
+        background-size: cover;
+      }
+      .scissor__image {
+        background-image: url("./Images/scissor\ .png");
+        background-size: cover;
+      }
+      button {
+        padding: 8px 40px;
+        width: 50px;
+        margin-left: 5px;
+      }
+      .cont {
+        width: 800px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+
+    <div class="gameCont">
+      <div class="keuze1"></div>
+      <div class="keuze2"></div>
+    </div>
+    <div class="cont">
+      <p>Choose Your Hand:</p>
+      <p id="answer"></p>
+
+      <button onclick="chooseType(0)">Rock</button>
+      <button onclick="chooseType(1)">Paper</button>
+      <button onclick="chooseType(2)">Scissors</button>
+    </div>
+    <script>
+      // IMPROVED VERSION!!
+
+      function chooseType(type) {
+        console.log(type);
+        let userChoice = document.getElementsByClassName("keuze1")[0];
+
+        reset(userChoice);
+        userChoice.classList.add(retrieveChosenType(type));
+
+        const randomType = Math.floor(Math.random() * 3);
+
+        let computer = document.getElementsByClassName("keuze2")[0];
+
+        reset(computer);
+        computer.classList.add(retrieveChosenType(randomType));
+
+        // document.getElementById('answer').innerText = "blabla";
+        // console.log(user + " "+ randomType);
+        if (type === 0 && randomType === 2) {
+          document.getElementById("answer").innerText = "Rock wins";
+        } else if (type === 0 && randomType === 1) {
+          document.getElementById("answer").innerText = "Paper wins";
+        } else if (type === 0 && randomType === 0) {
+          document.getElementById("answer").innerText = "Draw!";
+        } else if (type === 1 && randomType === 2) {
+          document.getElementById("answer").innerText = "Scissor wins";
+        } else if (type === 1 && randomType === 1) {
+          document.getElementById("answer").innerText = "Draw!";
+        } else if (type === 1 && randomType === 0) {
+          document.getElementById("answer").innerText = "Paper wins";
+        } else if (type === 2 && randomType === 2) {
+          document.getElementById("answer").innerText = "Draw!";
+        } else if (type === 2 && randomType === 1) {
+          document.getElementById("answer").innerText = "Scissor wins";
+        } else if (type === 2 && randomType === 0) {
+          document.getElementById("answer").innerText = "Rock wins";
+        }
+      }
+
+      function reset(element) {
+        element.classList.remove("rock__image");
+        element.classList.remove("paper__image");
+        element.classList.remove("scissor__image");
+      }
+
+      function retrieveChosenType(type) {
+        let chosenType;
+        switch (type) {
+          case 0:
+            chosenType = "rock__image";
+            break;
+          case 1:
+            chosenType = "paper__image";
+            break;
+          case 2:
+            chosenType = "scissor__image";
+            break;
+          default:
+        }
+
+        return chosenType;
+      }
+    </script>
+  </body>
+</html>

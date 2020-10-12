@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Kijkend naar de volgende code: <br />
+
+      <code>
+        function printCar(){ <br />
+        const carBrand = "Volvo"; <br />
+        } <br />
+        console.log(carBrand);</code
+      >
+    </h2>
+    <h3>wat wordt er in de console gelogd?</h3>
+
+    <p>carBrand not defined, dus heb te te maken met block scope.</p>
+
+    <h2>
+      Kijkend naar de volgende code: <br />
+
+      <code
+        >let carName; <br />
+        function printCar() { <br />
+        carBrand = "Volvo"; <br />
+        } <br />
+        console.log(carBrand);
+      </code>
+    </h2>
+    <h3>wat wordt er in de console gelogd?</h3>
+
+    <p>carBrand not defined, dus heb te te maken met block scope.</p>
+
+    <h2>
+      Kijkend naar de volgende code: <br />
+
+      <code>
+        function printCar(){ <br />
+        const carBrand = "Volvo"; <br />
+        } <br />
+        printCar(); <br />
+        console.log(carBrand);</code
+      >
+    </h2>
+    <h3>wat wordt er in de console gelogd?</h3>
+
+    <p>
+      "Volvo" wordt gelogd, omdat de function eerst gecalled word en is dus de
+      variable bekend voor de console log.
+    </p>
+
+    <h2>
+      Kijkend naar de volgende code: <br />
+
+      <code>
+        function printCar(){ <br />
+        const carBrand = "Volvo"; <br />
+        return function(type){ <br />
+        console.log(carBrand + " " + type); <br />
+        } } <br />
+        <br />
+        const car = printCar(); <br />
+        car("v40");</code
+      >
+    </h2>
+    <h3>
+      wat wordt er in de console gelogd? hoe is dit anders dan voorgaande
+      opdrachten?
+    </h3>
+
+    <p>
+      "Volvo v40" wordt gelogd. <br />
+      dit is anders omdat je eerst de function called met car, en geef je een
+      parameter ('v40') door naar die function printCar.
+    </p>
+
+    <script>
+      // Opdracht 1
+      // function printCar() {
+      //   const carBrand = "Volvo";
+      // }
+
+      // console.log(carBrand);
+
+      // Opdracht 2
+      // let carName;
+      // function printCar() {
+      //   carBrand = "Volvo";
+      // }
+
+      // console.log(carBrand);
+
+      // Opdracht 3
+      // function printCar() {
+      //   carBrand = "Volvo";
+      // }
+
+      // printCar();
+      // console.log(carBrand);
+
+      // Opdracht 4
+      // function printCar() {
+      //   let carBrand = "Volvo";
+
+      //   return function (type) {
+      //     console.log(carBrand + " " + type);
+      //   };
+      // }
+
+      // let car = printCar();
+      // car("v40");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Arrays</h1>
+
+    <h3>
+      Opdracht 1: <br />
+      <br />
+      Maak een array met 10 getallen die willekeurig in een array staan. <br />
+      Print de array uit in jouw console.
+    </h3>
+
+    <code
+      >const numberArray = [2, 5, 8, 1, 7, 6, 4, 9, 10, 3]; <br />
+      console.log(numberArray);</code
+    >
+
+    <h3>
+      Opdracht 2: <br />
+      <br />
+      Maak een array met 5 verschillende fruitsoorten. <br />
+      Print de array uit in jouw console.
+    </h3>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      console.log(fruits);</code
+    >
+
+    <h3>
+      Opdracht 3: <br />
+      <br />
+      Op welke index staat “Appel”. <br />
+      Gebruik de index waarde om “Appel” in jouw console uit te printen.
+    </h3>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      console.log(fruits[1]);</code
+    >
+
+    <h3>
+      Opdracht 4: <br />
+      <br />
+      Op welke index staat “Aardbei”. <br />
+      Gebruik de index waarde om “Aardbei” in jouw console uit te printen.
+    </h3>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      console.log(fruits[4]);</code
+    >
+
+    <h3>
+      Opdracht 5: <br />
+      <br />
+      Gebruik de Math.random() methode om te bepalen welke waarde uit de eerste
+      array wordt gehaald. <br />
+      Vervolgens kun je de waarde gebruiken als index en de fruitsoort printen
+      in jouw console. <br />
+      Helaas, de getallen 5 t/m 10 uit de eerste array zullen een undefined
+      teruggeven <br />
+      als je dat als index bij de fruit array zal gebruiken. <br />
+      Hiervoor kun je de modulo (%) gebruiken.
+    </h3>
+
+    <code>
+      const numberArray = [2, 5, 8, 1, 7, 6, 4, 9, 10, 3]; <br />
+      const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];<br />
+      const shuffle = numberArray[Math.round(Math.random() * 9)] % 5;
+    </code>
+
+    <h3>
+      Opdracht 6: <br />
+      <br />
+      Zoek uit wat push(), pop(), shift(), slice(), splice(), sort(). <br />
+      Maak gebruik van de fruits array en maak voor elke functie <br />
+      een voorbeeld en geef in commentaar wat het doet.
+    </h3>
+
+    <h3>push()</h3>
+    <p>
+      The push() method adds one or more elements to the end of an array and
+      returns the new length of the array.
+    </p>
+    <code>
+      const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      const fruitLength = fruits.push("watermelon");
+
+      <br />
+      console.log(fruits);
+      <strong
+        >Logs the fruit array including the newly "pushed" value
+        'watermelon'.</strong
+      >
+      <br />
+      console.log(fruitLength)
+      <strong>Returns the new Array length of fruits which would be 6</strong
+      >;</code
+    >
+    <h3>pop()</h3>
+    <p>
+      The pop() method removes the last element from an array and returns that
+      element. <br />
+      This method changes the length of the array.
+    </p>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      const lastElement = fruits.pop(); <br />
+      console.log(fruits);
+      <strong>Logs the fruit array minus the last element.</strong>
+      <br />
+      console.log(lastElement); <strong>Logs the popped fruit "aardbei"</strong>
+    </code>
+
+    <h3>shift()</h3>
+    <p>
+      The shift() method removes the first element from an array and returns
+      that removed element. <br />
+      This method changes the length of the array.
+    </p>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      const firstElement = fruits.shift(); <br />
+      console.log(fruits);
+      <strong>logs the fruit array minus the first element.</strong> <br />
+      console.log(firstElement);
+      <strong
+        >Logs the first element that was taken out of the array :
+        'banana'.</strong
+      ></code
+    >
+
+    <h3>slice()</h3>
+    <p>
+      The slice() method returns a shallow copy of a portion of an array into a
+      new array object <br />
+      selected from start to end (end not included) where start and end
+      represent <br />
+      the index of items in that array. The original array will not be modified.
+    </p>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      console.log(fruits.slice(1));
+      <strong
+        >Logs from index [1] till end of array :["apple", "kiwi", "orange",
+        "aardbei"]</strong
+      >
+      <br />
+      console.log(fruits.slice(1, 4));
+      <strong
+        >Log from index[1] to [3] ( end not
+        included):['apple','kiwi','orange']</strong
+      ></code
+    >
+
+    <h3>splice()</h3>
+
+    <p>
+      The splice() method changes the contents of an array by removing or
+      replacing existing elements and/or adding new elements in place.
+    </p>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      fruits.splice(1, 0, "berries");
+      <strong>Added "berries" on index[1] and didnt delete anything.</strong>
+      <br />
+      console.log(fruits);
+      <strong>
+        ["banana","berries" "apple", "kiwi", "orange", "aardbei"]</strong
+      >
+      <br />
+      fruits.splice(1, 2, "apple");
+      <strong
+        >Added "apple" on index[1] and deleted 2 elements starting from
+        index[1]</strong
+      >
+      <br />
+      console.log(fruits);<strong
+        >["banana", "apple", "kiwi", "orange", "aardbei"]</strong
+      ></code
+    >
+
+    <h3>sort()</h3>
+
+    <p>
+      The sort() method sorts the elements of an array in place and returns the
+      sorted array. <br />
+      The default sort order is ascending, either numerically or alpabetically
+      by comparing their sequences.
+    </p>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      console.log(fruits.sort());
+      <strong>['aardbei', 'apple', 'banana','kiwi' 'orange']</strong>
+      <br />
+      const numbers = [12, 123, 4, 2, 35, 56]; <br />
+      console.log(numbers.sort());
+      <strong>[12, 123, 2, 35, 4, 56]</strong></code
+    >
+
+    <h3>
+      Opdracht 7: <br />
+      <br />
+      Naast de functies die je van de array kunt gebruiken heb je ook nog de
+      “length” property die je kunt gebruiken. <br />
+      Hiermee kan je de grootte van de array opvragen. <br />
+      Gebruik de length property en print in de console uit hoe groot de fruits
+      array is.
+    </h3>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      console.log(fruits.length); <strong>5</strong></code
+    >
+
+    <h3>
+      Opdracht 8: <br />
+      <br />
+      Opdracht 8: De bestaande values van de array kan je ook aanpassen. <br />
+      Zoek uit hoe je op een specifieke index de waarde kan aanpassen. <br />
+      Pas de value “orange” naar “watermelon”.
+    </h3>
+
+    <code>
+      const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      fruits[3] = "watermelon"; <br />
+      console.log(fruits);<strong
+        >["banana", "apple", "kiwi", "watermelon", "aardbei"]</strong
+      ></code
+    >
+
+    <h3>
+      Opdracht 9: <br />
+      <br />
+      Kijkend naar de fruits array. Hoe draai je de values “Aardbei” en
+      “Mandarijn” om in de array <br />
+      door gebruik te maken van indices (index).
+    </h3>
+
+    <code
+      >const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"]; <br />
+      let temp = fruits[0];
+      <strong>Temporarily store the item you want to switch : "banana".</strong>
+      <br />
+      fruits[0] = fruits[1];<strong
+        >assign the first item to the second item : "banana" becomes
+        "apple".</strong
+      >
+      <br />
+      fruits[1] = temp;<strong
+        >Assign the temporarily stored item to the second item to complete the
+        switch : "apple" becomes "banana".
+      </strong>
+      <br />
+      console.log(fruits);</code
+    >
+
+    <script>
+      //   Opdracht 1
+      // const numberArray = [2, 5, 8, 1, 7, 6, 4, 9, 10, 3];
+      // console.log(numberArray);
+
+      // Opdracht 2
+      //  const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // console.log(fruits);
+
+      //  Opdracht 3
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // console.log(fruits[1]);
+
+      // Opdracht 4
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // console.log(fruits[4]);
+
+      // Opdracht 5
+      // const numberArray = [2, 5, 8, 1, 7, 6, 4, 9, 10, 3];
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // const shuffle = numberArray[Math.round(Math.random() * 9)] % 5;
+      // console.log(shuffle);
+      // console.log(fruits[shuffle]);
+
+      // Opdracht 6
+      //                               push()
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // const fruitLength = fruits.push("watermelon");
+      // console.log(fruits);
+      // console.log(fruitLength);
+
+      //                                pop()
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // const lastElement = fruits.pop();
+      // console.log(fruits);
+      // console.log(lastElement);
+
+      //                                 shift()
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // const firstElement = fruits.shift();
+      // console.log(fruits);
+      // console.log(firstElement);
+
+      //                                 slice()
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // console.log(fruits.slice(1));
+      // console.log(fruits.slice(1, 4));
+
+      //                                 splice()
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // fruits.splice(1, 0, "berries");
+      // console.log(fruits);
+      // fruits.splice(1, 2, "apple");
+      // console.log(fruits);
+
+      //                                  sort()
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // console.log(fruits.sort());
+      // const numbers = [12, 123, 4, 2, 35, 56];
+      // console.log(numbers.sort());
+
+      // Opdracht 7
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // console.log(fruits.length);
+
+      // Opdracht 8
+      // const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      // fruits[3] = "watermelon";
+      // console.log(fruits);
+
+      // opdracht 9
+      const fruits = ["banana", "apple", "kiwi", "orange", "aardbei"];
+      let temp = fruits[0];
+      fruits[0] = fruits[1];
+      fruits[1] = temp;
+      console.log(fruits);
+    </script>
+  </body>
+</html>
