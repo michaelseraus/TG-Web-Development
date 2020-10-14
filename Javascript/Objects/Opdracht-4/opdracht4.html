@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 style="text-align: center">Objects</h1>
+
+<h3>Opdracht 4: <br> <br>
+    Gegeven deze code: <br> <br>
+           const Person(name, age) { <br>
+               this.name = name; <br>
+               this.age = age; <br>
+           } <br> <br>
+          
+           const persons = [
+               new Person("Jan", 24), <br>
+               new Person("Klaas", 15),<br>
+               new Person("Yanis", 42),<br>
+               new Person("Rupel", 55),<br>
+               new Person("Hendrik", 32),<br>
+               new Person("Mono", 28),<br>
+               new Person("West", 23)] <br> <br>
+     
+               Sorteer persons op leeftijd van klein naar groot.
+            </h3>
+          
+    <code>function Person (name, age) { <br>
+        this.name = name; <br>
+        this.age = age; <br>
+    } <br> <br>
+   
+    const persons = [ <br>
+        new Person("Jan", 24),<br>
+        new Person("Klaas", 15),<br>
+        new Person("Yanis", 42),<br>
+        new Person("Rupel", 55),<br>
+        new Person("Hendrik", 32),<br>
+        new Person("Mono", 28),<br>
+        new Person("West", 23),<br> 
+    ] <br> <br>
+
+// sort function  <br> <br>
+
+persons.sort((a , b) => a.age - b.age); <br>
+
+console.log(persons);</code>
+
+
+
+    <script>
+         function Person (name, age) {
+           this.name = name;
+           this.age = age;
+       }
+      
+       const persons = [
+           new Person("Jan", 24),
+           new Person("Klaas", 15),
+           new Person("Yanis", 42),
+           new Person("Rupel", 55),
+           new Person("Hendrik", 32),
+           new Person("Mono", 28),
+           new Person("West", 23),
+       ]
+
+// sort function 
+
+persons.sort((a , b) => a.age - b.age);
+
+console.log(persons);
+    </script>
+</body>
+</html>

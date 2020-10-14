@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Objects</h1>
+
+    <h3>
+      Opdracht 3: <br />
+      <br />
+      Het is heel gebruikelijk dat dezelfde objecten in een lijst staan. <br />
+      Maak een lijst aan en voeg 4 Club objecten toe aan de lijst. <br />
+      Itereer over de lijst heen en print de verschillende clubnamen uit op jouw
+      pagina.
+    </h3>
+
+    <code>
+      const Clubinfo = function (name, sport, members) { <br />
+      this.name = name; <br />
+      this.sport = sport; <br />
+      this.members = members; <br />
+      }; <br />
+      <br />
+
+      const ajax = new Clubinfo("ajax", "football", 1000); <br />
+      const manchester = new Clubinfo("manchester", "football", 2000); <br />
+      const psv = new Clubinfo("psv", "football", 12345); <br />
+      const vfn = new Clubinfo("vfn", "volleyball", 23453); <br />
+      <br />
+
+      // make a list with similar objects <br />
+      <br />
+
+      let clubCluster = [ajax, manchester, psv, vfn]; <br />
+      <br />
+      // loop through object properties <br />
+      <br />
+      for (i = 0; i < clubCluster.length; i++) { <br />
+      console.log(clubCluster[i].name); }
+    </code>
+    <script>
+      const Clubinfo = function (name, sport, members) {
+        this.name = name;
+        this.sport = sport;
+        this.members = members;
+      };
+
+      const ajax = new Clubinfo("ajax", "football", 1000);
+      const manchester = new Clubinfo("manchester", "football", 2000);
+      const psv = new Clubinfo("psv", "football", 12345);
+      const vfn = new Clubinfo("vfn", "volleyball", 23453);
+
+      //  make a list with similar objects
+
+      let clubCluster = [ajax, manchester, psv, vfn];
+
+      //   loop through object properties
+
+      for (i = 0; i < clubCluster.length; i++) {
+        console.log(clubCluster[i].name);
+      }
+    </script>
+  </body>
+</html>

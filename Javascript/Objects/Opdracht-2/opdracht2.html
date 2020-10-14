@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Objects</h1>
+
+    <h3>
+      Opdracht 2: <br />
+      <br />
+      Maak een Object van contactgegevens en voeg dat ook toe aan de club
+      object: <br />
+
+      <ul>
+        <li>Contactgegevens</li>
+        <li>Adres</li>
+        <li>Telefoonnr</li>
+        <li>Contactpersoon</li>
+      </ul>
+    </h3>
+
+    <code>
+      const Contactinfo = function (address, phonenumber, contactperson) {
+      <br />
+      this.address = address; <br />
+      this.phonenumber = phonenumber; <br />
+      this.contactperson = contactperson; <br />
+      }; <br />
+      <br />
+      const Clubinfo = function (name, sport, members, contactinfo) { <br />
+      this.name = name; <br />
+      this.sport = sport; <br />
+      this.members = members; <br />
+      this.contactinfo = contactinfo; <br />
+      };
+    </code>
+    <script>
+      const Contactinfo = function (address, phonenumber, contactperson) {
+        this.address = address;
+        this.phonenumber = phonenumber;
+        this.contactperson = contactperson;
+      };
+
+      const Clubinfo = function (name, sport, members, contactinfo) {
+        this.name = name;
+        this.sport = sport;
+        this.members = members;
+        this.contactinfo = contactinfo;
+      };
+    </script>
+  </body>
+</html>

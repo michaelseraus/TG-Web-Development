@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      Opdracht 9: <br />
+      <br />
+      Stel je hebt het volgende array met random getallen: <br />
+      [2,7,5,10,4,9,3,1,8,6] <br />
+      Bubble sort is een hele bekende sorterings algoritme. <br />
+      Hiermee kun je de array met random getallen sorteren van klein naar groot.
+      <br />
+      Je mag bij deze oefening geen gebruik maken van de sort() functie. <br />
+      Lees je in hoe Bubble sort werkt:
+      https://en.wikipedia.org/wiki/Bubble_sort <br />
+      en codeer de sorterings algoritme uit.
+    </h3>
+
+    <code
+      >let array = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6]; <br />
+      <br />
+
+      for (j = 0; j < array.length; j++) { <br />
+      console.log(array); <br />
+      for (i = 0; i < array.length; i++) { <br />
+      if (array[i] > array[i + 1]) { <br />
+      let temp = array[i]; <br />
+      array[i] = array[i + 1]; <br />
+      array[i + 1] = temp; <br />
+      } } }</code
+    >
+
+    <script>
+      let array = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+
+      for (j = 0; j < array.length; j++) {
+        console.log(array);
+        for (i = 0; i < array.length; i++) {
+          if (array[i] > array[i + 1]) {
+            let temp = array[i];
+            array[i] = array[i + 1];
+            array[i + 1] = temp;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

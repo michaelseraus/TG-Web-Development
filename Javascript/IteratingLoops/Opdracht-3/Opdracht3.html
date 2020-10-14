@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Loops</h1>
+
+    <h3>
+      Opdracht 3: <br />
+      <br />
+      Maak gebruik van een loop en itereer door de sports array heen. <br />
+      Itereer de loop met even getallen en print de waarde in jouw console uit.
+    </h3>
+
+    <code
+      >const sports = [ "voetbal", "basketbal", "volleybal", "hockey",
+      "honkbal", "zwemmen", "korfbal" ]; <br />
+
+      for (i = 0; i < sports.length; i++){ <br />
+      if (i % 2 == 0){ <br />
+      console.log(sports[i]);
+      <strong>voetbal|volleybal|honkbal|korfbal</strong> <br />
+      } }</code
+    >
+
+    <script>
+      const sports = [
+        "voetbal",
+        "basketbal",
+        "volleybal",
+        "hockey",
+        "honkbal",
+        "zwemmen",
+        "korfbal"
+      ];
+
+      for (i = 0; i < sports.length; i++) {
+        if (i % 2 == 0) {
+          console.log(sports[i]);
+        }
+      }
+    </script>
+  </body>
+</html>

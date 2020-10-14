@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      Opdracht 7: <br />
+      <br />
+      ● Maak een while loop die 3x itereert <br />
+      ● Binnen de while loop maak je een for-loop die 10x itereert <br />
+      ● Bij de eerste while iteratie wil ik dat de getallen 1,2,3,4,5,6,7,8,9,10
+      in je console uitgeprint wordt <br />
+      ● Bij de tweede while iteratie wil ik dat de getallen
+      2,4,6,8,10,12,14,16,18,20 in je console uitgeprint wordt <br />
+      ● Bij de derde while iteratie wil ik dat de getallen
+      3,6,9,12,15,18,21,24,27,30 in je console uitgeprint wordt
+    </h3>
+
+    <code>
+      let i = 1; <br />
+      while (i < 4) { <br />
+      if (i == 1) { <br />
+      for (j = 1; j < 11; j++) { <br />
+      console.log(j); } <br />
+      } else if (i == 2) { <br />
+      for (k = 2; k < 21; k++) { <br />
+      if (k % 2 == 0) { <br />
+      console.log(k); } <br />
+      } else if (i == 3) { <br />
+      for (l = 3; l < 31; l++) { <br />
+      if (l % 3 == 0) { <br />
+      console.log(l); } <br />
+      } } i++; <br />
+      }
+    </code>
+
+    <h3>Or more compact</h3>
+
+    <code>
+      let i = 1; <br />
+      while (i < 4) { <br />
+      for (let j = 1; j < 11; j++) { <br />
+      console.log(i * j); <br />
+      } <br />
+      i++ <br />
+      }
+    </code>
+
+    <script>
+      let i = 1;
+      while (i < 4) {
+        if (i == 1) {
+          for (j = 1; j < 11; j++) {
+            console.log(j);
+          }
+        } else if (i == 2) {
+          for (k = 2; k < 21; k++) {
+            if (k % 2 == 0) {
+              console.log(k);
+            }
+          }
+        } else if (i == 3) {
+          for (l = 3; l < 31; l++) {
+            if (l % 3 == 0) {
+              console.log(l);
+            }
+          }
+        }
+        i++;
+      }
+
+      //  Or a better way
+
+      //   let i = 1;
+      //   while (i < 4) {
+      //     for (let j = 1; j < 11; j++) {
+      //       console.log(i * j);
+      //     }
+      //     i++;
+      //   }
+    </script>
+  </body>
+</html>
