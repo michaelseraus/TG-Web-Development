@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calcContainer {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #44bd32;
+}
+
+.calcContainer .calculator {
+  height: 305px;
+  width: 200px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 20px;
+  scale: 1.5;
+  -webkit-box-shadow: 10px 15px 28px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 15px 28px 8px rgba(0, 0, 0, 0.75);
+}
+
+.calcContainer .calculator .display {
+  width: 100%;
+  height: 65px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.calcContainer .calculator .display h1 {
+  margin-right: 10px;
+}
+
+.calcContainer .calculator p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.calcContainer .calculator button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: medium;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.calcContainer .calculator .btn-primary {
+  background-color: #333333;
+}
+
+.calcContainer .calculator .btn-primary:hover {
+  background-color: #8d8b8b;
+}
+
+.calcContainer .calculator .btn-primary:active {
+  background-color: #333333;
+}
+
+.calcContainer .calculator .btn-secondary {
+  background-color: #fd9d21;
+}
+
+.calcContainer .calculator .btn-secondary:hover {
+  background-color: #f7bc6f;
+}
+
+.calcContainer .calculator .btn-secondary:active {
+  background-color: #fd9d21;
+}
+
+.calcContainer .calculator .btn-tertiary {
+  background-color: #a5a5a5;
+}
+
+.calcContainer .calculator .btn-tertiary:hover {
+  background-color: #e0dfdf;
+}
+
+.calcContainer .calculator .btn-tertiary:active {
+  background-color: #a5a5a5;
+}
+
+.calcContainer .calculator .long {
+  width: 92px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=Main.css.map */

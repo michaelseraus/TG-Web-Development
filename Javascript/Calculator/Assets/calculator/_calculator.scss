@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calcContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #44bd32;
+
+  .calculator {
+    height: 305px;
+    width: 200px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 20px;
+    scale: 1.5;
+    -webkit-box-shadow: 10px 15px 28px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 15px 28px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 15px 28px 8px rgba(0, 0, 0, 0.75);
+
+    .display {
+      width: 100%;
+      height: 65px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      h1 {
+        margin-right: 10px;
+      }
+    }
+    p {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: medium;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: $primary-color-hover;
+      }
+
+      &:active {
+        background-color: $primary-color;
+      }
+    }
+
+    .btn-secondary {
+      background-color: $secondary-color;
+
+      &:hover {
+        background-color: $secondary-color-hover;
+      }
+
+      &:active {
+        background-color: $secondary-color;
+      }
+    }
+
+    .btn-tertiary {
+      background-color: $tertiary-color;
+
+      &:hover {
+        background-color: $tertiary-color-hover;
+      }
+
+      &:active {
+        background-color: $tertiary-color;
+      }
+    }
+
+    .long {
+      width: 92px;
+      border-radius: 20px;
+    }
+  }
+}
