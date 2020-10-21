@@ -14,37 +14,44 @@ display.innerHTML = calculator.displayValue;
 updateDisplay();
 
 function inputDigit(digit) {
-const {displayValue, waitingForSecondOperand} = calculator ; 
-  
+const {displayValue, waitingForOperand} = calculator ; 
 let clearbutton = document.getElementById('clear');
 clearbutton.innerHTML = "C"
 
-if (waitingForSecondOperand === true) {
+if (waitingForOperand === true) {
 calculator.displayValue = digit;
-calculator.waitingForSecondOperand = false;
+calculator.waitingForOperand = false;
 
 } else {
 calculator.displayValue =
 displayValue === 0 ? digit : displayValue + digit;
-}
-    console.log(calculator);}
+}}
+
+
 
 
 function inputMinus(minus){
+  const {displayValue, waitingForOperand, operator} = calculator;
 
-  if (calculator.displayValue === 0 ){
+  if (displayValue === 0 ){
     calculator.displayValue = minus 
 
-  } else if(calculator.waitingForSecondOperand === true){
+  } if (displayValue && waitingForOperand !== true){
+    calculator.displayValue = minus + calculator.displayValue
+  }
+  else if(waitingForOperand === true){
       calculator.displayValue = minus 
-      calculator.waitingForSecondOperand = false;
-    }}
+      calculator.waitingForOperand = false;
+    }
+  }
+  
+    
 
   
   function inputDecimal(dot) {
-    if (calculator.waitingForSecondOperand === true) {
+    if (calculator.waitingForOperand === true) {
       calculator.displayValue = "0.";
-      calculator.waitingForSecondOperand = false;
+      calculator.waitingForOperand = false;
       return;
     } if(calculator.displayValue === 0){
       calculator.displayValue = calculator.displayValue + dot;
@@ -57,9 +64,16 @@ function inputMinus(minus){
     function inputOperator(clickedoperator) {
     const { displayValue, firstOperand, secondOperand, operator, secondOperator } = calculator;
     const inputValue = parseFloat(displayValue);
+
+    if(operator && calculator.waitingForOperand){
+      calculator.operator = clickedoperator;
+      console.log(calculator);
+      return;
+    }
   
     if (firstOperand === null && !isNaN(inputValue)) {
       calculator.firstOperand = inputValue;
+      
         } else if (clickedoperator) {
         let result = "";  
                       switch (clickedoperator) {
@@ -68,28 +82,35 @@ function inputMinus(minus){
                       calculator.secondOperand = calculator.firstOperand;
                       calculator.firstOperand = inputValue;
                       calculator.secondOperator = clickedoperator;
-                      calculator.waitingForSecondOperand = true;
+                    
+                      calculator.waitingForOperand = true;
+                      console.log(calculator);
                       break;
                 }
                       case "=":
-                      case "+":{
-                    // if there is a division or times
+                        case "+":
+                          case "-":{
+                      // if there is a division or times 
+
                       if (firstOperand && secondOperand) {
-                        result = Calculate(inputValue, firstOperand, secondOperator);
-                        result = Calculate(result, secondOperand, operator);
-                      } else {
-                          result = Calculate(firstOperand, inputValue, operator);
+                      result = Calculate(inputValue, firstOperand, secondOperator);
+                      result = Calculate(result, secondOperand, operator);
+
+                      }else {
+                      result = Calculate(firstOperand, inputValue, operator);
                       }
                       break;
-                  }
-                }
-                calculator.displayValue = parseFloat(result.toFixed([7]));
-                calculator.firstOperand = result;
-              }
-              calculator.waitingForSecondOperand = true;
-              calculator.operator = clickedoperator;
-              console.log(calculator);
-              }
+                    }
+                    }
+                    calculator.displayValue = parseFloat(result.toFixed([2]));
+                    calculator.firstOperand = result;
+                    calculator.secondOperand = null;
+                    }
+                    calculator.waitingForOperand = true;
+                    calculator.operator = clickedoperator;
+                    console.log(calculator);
+                    }
+                      
 
 
 
@@ -116,7 +137,7 @@ function reset() {
   calculator.displayValue = 0;
   calculator.firstOperand = null;
   calculator.secondOperand=null;
-  calculator.waitingForSecondOperand = false;
+  calculator.waitingForOperand = false;
   calculator.operator = null;
   calculator.secondOperator= null;
   console.log(calculator);
@@ -133,14 +154,14 @@ keys.addEventListener("click", (event) => {
   if (target.classList.contains("operator")) {
     inputOperator(target.value);
     updateDisplay();
-   
   }
+
 
   if (target.classList.contains("decimal")) {
     inputDecimal(target.value);
     updateDisplay();
-   
   }
+
 
   if (target.classList.contains("minus")) {
     inputMinus(target.value);
