@@ -88,6 +88,7 @@
 
 .calcContainer .calculator .btn-primary:active {
   background-color: #333333;
+  scale: 0.9;
 }
 
 .calcContainer .calculator .btn-secondary {
@@ -100,6 +101,7 @@
 
 .calcContainer .calculator .btn-secondary:active {
   background-color: #fd9d21;
+  scale: 0.9;
 }
 
 .calcContainer .calculator .btn-tertiary {
@@ -112,10 +114,16 @@
 
 .calcContainer .calculator .btn-tertiary:active {
   background-color: #a5a5a5;
+  scale: 0.9;
 }
 
 .calcContainer .calculator .long {
   width: 92px;
   border-radius: 20px;
+}
+
+.calcContainer .clicked {
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=Main.css.map */

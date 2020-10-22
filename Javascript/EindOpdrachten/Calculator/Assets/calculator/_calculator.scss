@@ -62,6 +62,7 @@
 
       &:active {
         background-color: $primary-color;
+        scale: 0.9;
       }
     }
 
@@ -74,6 +75,7 @@
 
       &:active {
         background-color: $secondary-color;
+        scale: 0.9;
       }
     }
 
@@ -86,6 +88,7 @@
 
       &:active {
         background-color: $tertiary-color;
+        scale: 0.9;
       }
     }
 
@@ -93,5 +96,9 @@
       width: 92px;
       border-radius: 20px;
     }
+  }
+  .clicked {
+    background-color: white;
+    color: black;
   }
 }
