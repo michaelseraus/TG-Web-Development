@@ -17,7 +17,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #44bd32;
+  background-color: #d5ecd0;
 }
 
 .calcContainer .calculator {
@@ -44,9 +44,10 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  overflow: hidden;
 }
 
-.calcContainer .calculator .display h1 {
+.calcContainer .calculator .display h2 {
   margin-right: 10px;
 }
 
@@ -122,7 +123,7 @@
   border-radius: 20px;
 }
 
-.calcContainer .clicked {
+.calcContainer .calculator .clicked {
   background-color: white;
   color: black;
 }
